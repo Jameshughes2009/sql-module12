@@ -21,4 +21,4 @@ cfonts.say("James Hughes SQL Employee Tracker", {
     align: 'left',
     colors: ['red'],
     backgroup: 'transparent'
-})
+});
