@@ -1,4 +1,4 @@
-// const inquirer = require("inquirer")
+const inquirer = require("inquirer")
 const mysql = require("mysql2")
 const cfonts = require("cfonts")
 
@@ -16,3 +16,9 @@ connection.connect((err) => {
     console.log("you are now connected!!");
     start(); //used to start the app
 });
+cfonts.say("James Hughes SQL Employee Tracker", {
+    font: "block",
+    align: 'left',
+    colors: ['red'],
+    backgroup: 'transparent'
+})
