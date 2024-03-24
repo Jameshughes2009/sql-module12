@@ -25,4 +25,6 @@ firt_name VARCHAR(70) NOT NULL,
 last_name VARCHAR(70) NOT NULL,
 role_id INT,
 manager_id INT NOT NULL
-)
+);
+
+-- Completed--
