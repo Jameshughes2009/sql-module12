@@ -28,12 +28,3 @@ VALUES
 ('Charles', 'Darwin', 6, 6),
 ('Ken', 'Chad(Dad)', 7,7),
 ('Mark', 'Luscher(Brad)', 8,8);
-
-INSERT INTO roles (title, salary, department_id)
-VALUES 
-('Chief Executive Officer', 555000.00, 1),
-('Marketing Manager', 125000.00, 2),
-('HR Director', 189000.00, 3),
-('Finance Head', 145000.00, 4),
-('Senior Engineer', 185000.00, 5),
-('IT Manager', 125000.00, 6);

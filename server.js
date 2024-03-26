@@ -110,7 +110,7 @@ function viewAllDepartments() {
 }
 // Used to view roles 
 function viewAllRoles() {
-    const query = "SELECT roles.title, roles.id, departments.department_name, roles.salary from roles join departments on roles.department_id = departments.id";
+    const query = "SELECT roles.title, roles.id, departments.department_name, roles.salary from roles join departments on roles.department_id = departments.id";// a left join is a better function to not create dubilcates - with data 
     connection.query(query, (err, res) => {
         if (err) throw err;
         console.table(res);
