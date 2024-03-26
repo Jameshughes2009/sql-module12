@@ -449,12 +449,10 @@ function deleteRole() {
     const query = "SELECT * FROM roles";
     connection.query(query, (err, res) => {
         if (err) throw err;
-        // map through the retrieved roles to create an array of choices
         const choices = res.map((role) => ({
             name: `${role.title} (${role.id}) - ${role.salary}`,
             value: role.id,
         }));
-        // add a "Go Back" option to the list of choices
         choices.push({ name: "Go Back", value: null });
         inquirer
             .prompt({
@@ -464,9 +462,7 @@ function deleteRole() {
                 choices: choices,
             })
             .then((answer) => {
-                // check if the user chose the "Go Back" option
                 if (answer.roleId === null) {
-                    // go back to the deleteDepartmentsRolesEmployees function
                     deleteDepartmentsRolesEmployees();
                     return;
                 }
