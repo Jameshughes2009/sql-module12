@@ -19,7 +19,7 @@ VALUES
 ('Finance Head', 145000.00, 4),
 ('COO', 400000.00, 5),
 ('Chad', 96.00, 6),
-('IT Manager', 300000.00, 7),
+('IT Manager', 78000.00, 7),
 ('VP of scientific affairs', 300000.00, 8);
 
 
