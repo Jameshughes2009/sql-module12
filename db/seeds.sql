@@ -18,7 +18,7 @@ VALUES
 ('HR Director', 45000.00, 3),
 ('Finance Head', 145000.00, 4),
 ('COO', 400000.00, 5),
-('Chad', 300000.00, 6),
+('Chad', 96.00, 6),
 ('IT Manager', 300000.00, 7),
 ('VP of scientific affairs', 300000.00, 8);
 
