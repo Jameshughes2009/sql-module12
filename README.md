@@ -14,7 +14,7 @@ The objective was to build a command-line application from scratch to manage a c
 - "cfonts": "3.2.0",
 - "chalk": "5.3.0",
 - "console.table": "0.10.0",
-- "inquirer": "9.2.16",
+- "inquirer": "^8.2.4",
 - "mysql2": "3.9.2"
 
 ## REPO LINK
