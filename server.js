@@ -1,4 +1,4 @@
-// const inquirer = require("inquirer")
+const inquirer = require("inquirer")
 const mysql = require("mysql2")
 const cfonts = require("cfonts")
 
@@ -22,3 +22,12 @@ cfonts.say("James Hughes SQL Employee Tracker", {
     colors: ['red'],
     backgroup: 'transparent'
 });
+
+// This will be used to start the function 
+function start(){
+    inquirer
+        .prompt({
+            type: "list",
+            name: "action",
+        })
+}
