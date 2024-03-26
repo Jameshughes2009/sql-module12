@@ -25,7 +25,9 @@ VALUES
 ('Iron', 'Man', 3, 3),
 ('James', 'Blunt', 4, 4),
 ('Thomas', 'Hobbes', 5, 5),
-('Charles', 'Darwin', 6, 6);
+('Charles', 'Darwin', 6, 6),
+('Ken', 'Chad(Dad)', 7,7),
+('Mark', 'Luscher(Brad)', 8,8);
 
 INSERT INTO roles (title, salary, department_id)
 VALUES 
