@@ -19,3 +19,8 @@ The objective was to build a command-line application from scratch to manage a c
 
 ## REPO LINK
  - [Module 12 Repo Link](https://github.com/Jameshughes2009/sql-module12)
+
+
+ ## Contributing
+
+Youtube Videos and My UofT Tutor Erik Hirsch
