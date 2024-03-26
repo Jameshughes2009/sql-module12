@@ -7,7 +7,8 @@ VALUES
 ('QA'),
 ('IT'),
 ('C-Suite'),
-('Scientific Affairs');
+('Scientific Affairs'),
+('Coolest Mom');
 
 
 
@@ -20,7 +21,8 @@ VALUES
 ('COO', 400000.00, 5),
 ('Chad', 96.00, 6),
 ('IT Manager', 78000.00, 7),
-('VP of scientific affairs', 300000.00, 8);
+('VP of scientific affairs', 300000.00, 8),
+('My Cool Mom', 790000.00, 9);
 
 
 
@@ -33,6 +35,7 @@ VALUES
 ('Thomas', 'Hobbes', 5, 5),
 ('Charles', 'Darwin', 6, 6),
 ('Ken', 'Chad(Dad)', 7,7),
-('Mark', 'Luscher(Brad)', 8,8);
+('Mark', 'Luscher(Brad)', 8,8),
+('Nicole', 'BestMom', 9,9);
 
 -- Completed --
