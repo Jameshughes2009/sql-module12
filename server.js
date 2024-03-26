@@ -20,7 +20,8 @@ cfonts.say("James Hughes SQL Employee Tracker", {
     font: "block",
     align: 'left',
     colors: ['red'],
-    backgroup: 'transparent'
+    backgroup: 'transparent',
+    maxLength: '0'
 });
 
 // // This will be used to start the function 
