@@ -146,7 +146,6 @@ function addDepartment() {
             connection.query(query, (err, res) => {
                 if (err) throw err;
                 console.log(`Added department ${answer.name} to the database!`);
-                // restart the application
                 start();
                 console.log(answer.name);
             });
@@ -208,7 +207,7 @@ function addEmployee() {
                         },
                     ])
                     .then((answers) => {
-                        // adding an employee to out database
+                        // adding an employee to our database
                         const sql =
                             "INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)";
                         const values = [
