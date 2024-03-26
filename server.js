@@ -394,3 +394,51 @@ function deleteDepartment() {
             });
     });
 }
+// this will be used to view people by current manager
+function viewEmployeesByManager() {
+    const query = `
+      SELECT 
+        e.id, 
+        e.first_name, 
+        e.last_name, 
+        r.title, 
+        d.department_name, 
+        CONCAT(m.first_name, ' ', m.last_name) AS manager_name
+      FROM 
+        employee e
+        INNER JOIN roles r ON e.role_id = r.id
+        INNER JOIN departments d ON r.department_id = d.id
+        LEFT JOIN employee m ON e.manager_id = m.id
+      ORDER BY 
+        manager_name, 
+        e.last_name, 
+        e.first_name
+    `;
+
+    connection.query(query, (err, res) => {
+        if (err) throw err;
+
+        const employeesByManager = res.reduce((acc, cur) => {
+            const managerName = cur.manager_name;
+            if (acc[managerName]) {
+                acc[managerName].push(cur);
+            } else {
+                acc[managerName] = [cur];
+            }
+            return acc;
+        }, {});
+
+        console.log("Employees by manager:");
+        for (const managerName in employeesByManager) {
+            console.log(`\n${managerName}:`);
+            const employees = employeesByManager[managerName];
+            employees.forEach((employee) => {
+                console.log(
+                    `  ${employee.first_name} ${employee.last_name} | ${employee.title} | ${employee.department_name}`
+                );
+            });
+        }
+
+        start();
+    });
+}
