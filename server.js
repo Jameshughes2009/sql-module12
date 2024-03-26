@@ -108,9 +108,9 @@ function viewAllDepartments() {
         start();
     });
 }
-// Used to view all departments
-function viewAllDepartments() {
-    const query = "SELECT * FROM departments";
+// Used to view roles 
+function viewAllRoles() {
+    const query = "SELECT roles.title, roles.id, departments.department_name, roles.salary from roles join departments on roles.department_id = departments.id";
     connection.query(query, (err, res) => {
         if (err) throw err;
         console.table(res);
