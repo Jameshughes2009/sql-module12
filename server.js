@@ -572,7 +572,6 @@ function updateEmployeeRole() {
                             console.log(
                                 `Updated ${employee.first_name} ${employee.last_name}'s role to ${role.title} in the database!`
                             );
-                            // restart the application
                             start();
                         }
                     );
