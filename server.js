@@ -52,9 +52,9 @@ function start() {
                 "Update an employee role",
                 "View Employees by Manager",
                 "View Employees by Department",
-                "Delete Departments", 
-                "Delete Roles",
-                "Delete Employees",
+                "Delete Department", 
+                "Delete Role",
+                "Delete Employee",
                 "Exit",
             ],
         })
