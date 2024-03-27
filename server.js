@@ -16,12 +16,14 @@ connection.connect((err) => {
     console.log("you are now connected!!");
     start(); //used to start the app
 });
+// used to style Title for app
 cfonts.say("James Hughes SQL Employee Tracker", {
     font: "block",
     align: 'left',
     colors: ['red'],
     backgroup: 'transparent',
-    maxLength: '0'
+    maxLength: '0',
+    space: true
 });
 
 // // This will be used to start the function 
